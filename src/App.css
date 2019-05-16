@@ -1,0 +1,28 @@
+.App{
+  color: rgb(212, 212, 212);
+  font-family: 'Ubuntu Mono', monospace;
+}
+body{
+  background-image: url('./resources/portfolio background1080.PNG');
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 900px){
+  body{
+    background: linear-gradient(0deg, rgba(195,188,163,1) 0%, rgba(176,148,148,1) 45%, rgba(160,159,185,1) 100%);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+  }
+}
+
+@media screen and (min-width: 2300px){
+
+  body{
+  background-image: url('./resources/portfolio background.PNG');
+  }
+
+}

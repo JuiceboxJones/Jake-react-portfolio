@@ -1,0 +1,37 @@
+
+.modal {
+  position: fixed;
+  top: 22%;
+  left: 33.5%;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid grey;
+  overflow-x: auto;
+  max-height: calc(100vh - 210px);
+  width: 30%;
+}
+
+@media screen and (max-width: 900px){
+  .modal{
+    width: 90%;
+    top: 6%;
+    left: 1.5%;
+    background-color: #ffffffd9;
+    border: none;
+    border-radius: 4px;
+  }
+  .modal-confirm-button{
+    width: 40%;
+    margin-right: 10%;
+  }
+  .modal-close-button{
+    width: 40%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 2300px){
+  .modal{
+    top: 26%;
+  }
+}

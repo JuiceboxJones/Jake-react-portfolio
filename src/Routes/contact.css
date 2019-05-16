@@ -1,0 +1,170 @@
+.snapshot-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.github-window img{
+  border-radius: 2px 2px 0 0;
+  box-shadow: -3px 3px 4px 0 #212121a1;
+  -webkit-transition: ease-out 0.9s;
+  -moz-transition: ease-out 0.9s;
+  transition: ease-out 0.9s;
+}
+.github-window img:hover{
+  transition: 0.6s ease-in-out;
+  opacity: 0.9;
+  filter: blur(0.7px)
+
+}
+.linkedin-window img:hover{
+  transition: 0.6s ease-in-out;
+  opacity: 0.9;
+  filter: blur(0.7px)
+}
+.linkedin-window img{
+  border-radius: 2px 2px 0 0;
+  box-shadow: -3px 3px 4px 0 #212121a1;
+  -webkit-transition: ease-out 0.9s;
+  -moz-transition: ease-out 0.9s;
+  transition: ease-out 0.9s;
+}
+
+.app-icons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1%;
+  height: 50px;
+}
+
+
+.tar-icon{
+  display: grid;
+}
+
+.firefox-icon{
+  display: grid;
+}
+
+.firefox-icon a{
+  margin: 0 auto;
+}
+
+.tar-icon a{
+  margin: 0 auto;
+}
+
+.icon{
+width: 40px;
+height: 40px;
+margin: 0 auto;
+transition: 0.4s ease;
+animation: pulse 1.5s infinite
+}
+
+.icon:hover{
+background: rgba(255, 255, 255, 0.425);
+box-shadow: 0 0 7px 0 white;
+animation: 0s;
+}
+
+.mobile-contact{
+  display: none;
+}
+
+
+@keyframes pulse {
+  0% {
+    width: 40px;
+    height: 40px;
+  }
+
+  50% {
+    width: 42px;
+    height: 42px;
+  }
+
+  100% {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .full-contact{
+    display: none;
+  }
+  .mobile-contact{
+    display: block;
+  }
+  .email-main-container {
+    width: 90%;
+  }
+  .contact-links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .gh-m-img{
+    width: 30%;
+    margin-top: 27.3%;
+    transition: 3s ease-in-out;
+    animation: pulse-icon 1.4s infinite
+  }
+  .gm-m-img{
+    width: 37%; 
+    transition: 1s ease-in-out;
+    animation: pulse-icon 1.3s infinite
+  }
+  .li-m-img{
+    width: 30%;
+    margin-top: 6%;
+    transition: 5s ease-in-out;
+    animation: pulse-icon 1.5s infinite
+  }
+  .contact-nav{
+    background: linear-gradient(0deg, rgba(159,159,159,1) 0%, rgba(175,175,175,1) 45%, rgba(184,184,184,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: -1px 1px 10px 0 black;
+    padding: 5px;
+  }
+  .contact-nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    
+  }
+  @keyframes pulse-icon {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 2300px){
+  .linkedin-window img{
+    width: 130%;
+  }
+  .github-window img{
+    width: 130%;
+  }
+  .email-main-container{
+    width: 700px;
+    height: 550px;
+  }
+  .email-body{
+    height: 360px;
+  }
+  .snapshot-container{
+    margin-top: 6%;
+  }
+}

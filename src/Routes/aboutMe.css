@@ -1,0 +1,26 @@
+.AboutMe-message{
+  margin: 5px 0 0 10px;
+}
+.visible{
+  margin: 5px 0 0 10px;
+}
+.hidden{
+  display: none;
+}
+.aboutMe-heading{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 57, 57);
+}
+
+.skills-message{
+  text-align: left;
+}
+.skill-title{
+  font-weight: 600;
+  color: rgb(255, 57, 57);
+}
+
+@media screen and (max-width: 900px){}
+
+@media screen and (min-width: 2300px){}

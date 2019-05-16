@@ -1,0 +1,19 @@
+
+.HomePage-message{
+  margin: 5px 0 0 10px;
+}
+
+.entryCommand{
+  margin: 5px 0 0 10px;
+  display: inline-flex;
+}
+
+.root{
+  color: rgb(255, 57, 57);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 900px){}
+
+@media screen and (min-width: 2300px){}

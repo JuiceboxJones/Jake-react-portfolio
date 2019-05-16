@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.email-main-container{
+  font-family: 'Roboto', sans-serif;
+  width:500px;
+  height: 350px;
+  background: whitesmoke;
+  border-radius: 4px 4px 0 0;
+  margin: 0 auto;
+  box-shadow: -3px 3px 4px 0 #212121a1;
+}
+
+.email-form-container{
+  display: block;
+  text-align: center;
+}
+.email-header{
+border-radius: 4px 4px 0 0;
+box-shadow: 0px 1px 2px 0 #00000047;
+background:linear-gradient(0deg, rgba(228,57,14,1) 0%, rgba(217,73,37,1) 45%, rgba(223,101,70,1) 100%);
+}
+
+.email-header h3{
+  padding: 4px;
+  color: #080808;
+  font-size: 15px;
+}
+
+.email-address{
+  width:95%;
+  display: inline-block;
+  margin-top: 2%;
+  border: none;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  background: whitesmoke;
+}
+
+.email-subject{
+  width: 95%;
+  display: inline-block;
+  margin-top: 2%;
+  border: none;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  background: whitesmoke;
+}
+
+.email-body{
+  width: 95%;
+  height: 190px;
+  display: inline-block;
+  border: none;
+  overflow: auto;
+  margin-top: 2%;
+  background: whitesmoke;
+}
+
+textarea{
+  resize: none;
+}
+.btn-submit{
+  margin-left: 75%;
+  border: none;
+  border-radius: 4px;
+  width: 70px;
+  padding: 5px;
+  box-shadow: -1px 2px 3px 0 #3c3c3cc7;
+  background: linear-gradient(0deg, rgba(159,159,159,1) 0%, rgba(175,175,175,1) 45%, rgba(184,184,184,1) 100%);
+  
+}
+
+@media screen and (max-width: 900px){
+  .email-main-container{
+    margin-bottom: 10%;
+    width: 80%;
+  }
+  .email-header h3{
+    margin-top: 0;
+  }
+  .btn-submit{
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 2300px){}
