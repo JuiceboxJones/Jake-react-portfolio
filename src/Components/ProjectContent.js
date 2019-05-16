@@ -39,19 +39,19 @@ class ProjectContent extends Component {
             Socket.io
           </p>
           <p>Online multiplayer matchmaking app with live party chat.</p>
-          <Link to="https://squad-armory.now.sh/" target="_blank">
+          <a href="https://squad-armory.now.sh/" target="_blank">
             <button type="button" className="project-btn">
               Live
             </button>
-          </Link>
-          <Link
-            to="https://github.com/JuiceboxJones/The-Armory-Client"
+          </a>
+          <a
+            href="https://github.com/JuiceboxJones/The-Armory-Client"
             target="_blank"
           >
             <button type="button" className="project-btn">
               Code
             </button>
-          </Link>
+          </a>
         </div>
 
         <div className="Viva">
@@ -66,19 +66,18 @@ class ProjectContent extends Component {
             Language learning with spaced repetition with a database built
             around a linked list.
           </p>
-          <Link to="https://viva-mexico.now.sh" target="_blank">
+          <a href="https://viva-mexico.now.sh" target="_blank">
             <button type="button" className="project-btn">
               Live
             </button>
-          </Link>
-          <Link
-            to="https://github.com/thinkful-ei-armadillo/spaced-repetition-client-bob-jake"
+          </a>
+          <a href="https://github.com/thinkful-ei-armadillo/spaced-repetition-client-bob-jake"
             target="_blank"
           >
             <button type="button" className="project-btn">
               Code
             </button>
-          </Link>
+          </a>
         </div>
 
         <br />
@@ -95,19 +94,18 @@ class ProjectContent extends Component {
             An application designed to give you an estimate on how much
             disposable income you will have at the end of each month.{' '}
           </p>
-          <Link to="https://spndr.herokuapp.com" target="_blank">
+          <a href="https://spndr.herokuapp.com" target="_blank">
             <button type="button" className="project-btn">
               Live
             </button>
-          </Link>
-          <Link
-            to="https://github.com/JuiceboxJones/spndr-client"
+          </a>
+          <a href="https://github.com/JuiceboxJones/spndr-client"
             target="_blank"
           >
             <button type="button" className="project-btn">
               Code
             </button>
-          </Link>
+          </a>
         </div>
 
         <br />
@@ -121,22 +119,20 @@ class ProjectContent extends Component {
           />
           <p>HTML | CSS | JS | jQuery | AJAX</p>
           <p>An app that allows you to keep track of your favorite sites.</p>
-          <Link
-            to="https://thinkful-ei-armadillo.github.io/Jake-Andre-Bookmarks/"
+          <a href="https://thinkful-ei-armadillo.github.io/Jake-Andre-Bookmarks/"
             target="_blank"
           >
             <button type="button" className="project-btn">
               Live
             </button>
-          </Link>
-          <Link
-            to="https://github.com/thinkful-ei-armadillo/Jake-Andre-Bookmarks"
+          </a>
+          <a href="https://github.com/thinkful-ei-armadillo/Jake-Andre-Bookmarks"
             target="_blank"
           >
             <button type="button" className="project-btn">
               Code
             </button>
-          </Link>
+          </a>
         </div>
         <br/>
         </div>

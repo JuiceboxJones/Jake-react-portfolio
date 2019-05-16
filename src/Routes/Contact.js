@@ -33,41 +33,41 @@ render(){
       <div className="full-contact">
         <div className="snapshot-container">
           <div className="linkedin-window">
-            <Link to="https://www.linkedin.com/in/jake-derhalli/">
+            <a href="https://www.linkedin.com/in/jake-derhalli/">
               <img
                 src={require('../resources/linkedin.PNG')}
                 alt="linkedin-link"
               />
-            </Link>
+            </a>
           </div>
           <div className="github-window">
-            <Link to="https://github.com/JuiceboxJones">
+            <a href="https://github.com/JuiceboxJones">
               <img src={require('../resources/github.PNG')} alt="github-link" />{' '}
-            </Link>
+            </a>
           </div>
         </div>
         <div className="gmail-window">
           <div className="app-icons">
             <div className="tar-icon">
-              <Link to="/" className="icon-link">
+              <a href="/" className="icon-link">
                 <img
                   className="icon"
                   name="tar-icon"
                   src={require('../resources/tar.png')}
                   alt="home"
                 />
-              </Link>
+              </a>
               <label htmlFor="tar-icon">jake.tar.gz</label>
             </div>
             <div className="firefox-icon">
-              <Link to="/projects" className="icon-link">
+              <a href="/projects" className="icon-link">
                 <img
                   className="icon"
                   name="firefox-icon"
                   src={require('../resources/firefox3.png')}
                   alt="projects"
                 />
-              </Link>
+              </a>
               <label htmlFor="firefox-icon">Projects</label>
             </div>
           </div>
