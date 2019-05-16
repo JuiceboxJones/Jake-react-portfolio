@@ -48,7 +48,7 @@ static contextType = ModalContext
                       element: '|'
                     }}
                   >
-                    http://www.jake-derhalli.com/projects
+                    http://www.jakethedeveloper.com/projects
                   </Typist>
                 </div>
               </div>

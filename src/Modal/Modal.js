@@ -12,7 +12,7 @@ function Modal({ isShowing, hide, path }){
     <div className="modal-wrapper" aria-modal aria-hidden tabIndex={-1} role="dialog">
       <div className="modal">
         <div className="modal-header">
-        jake-derhalli.com says
+        jakethedeveloper.com says
         </div>
         <p>
           Are you sure you want to leave this page?
