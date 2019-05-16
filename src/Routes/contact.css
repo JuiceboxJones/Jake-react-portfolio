@@ -99,7 +99,7 @@ animation: 0s;
   .email-main-container {
     width: 90%;
   }
-  .contact-links{
+  .contact-links a{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
