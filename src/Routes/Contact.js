@@ -49,25 +49,25 @@ render(){
         <div className="gmail-window">
           <div className="app-icons">
             <div className="tar-icon">
-              <a href="/" className="icon-link">
+              <Link to="/" className="icon-link">
                 <img
                   className="icon"
                   name="tar-icon"
                   src={require('../resources/tar.png')}
                   alt="home"
                 />
-              </a>
+              </Link>
               <label htmlFor="tar-icon">jake.tar.gz</label>
             </div>
             <div className="firefox-icon">
-              <a href="/projects" className="icon-link">
+              <Link to="/projects" className="icon-link">
                 <img
                   className="icon"
                   name="firefox-icon"
                   src={require('../resources/firefox3.png')}
                   alt="projects"
                 />
-              </a>
+              </Link>
               <label htmlFor="firefox-icon">Projects</label>
             </div>
           </div>
