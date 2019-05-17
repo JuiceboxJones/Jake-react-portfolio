@@ -24,8 +24,8 @@ render(){
       <Link to='/projects' className=''>Projects</Link>
       </div>
       <div className='contact-links'>
-      <a href='https://github.com/JuiceboxJones' target="_blank"><img className='gh-m-img' src={require('../resources/github-mobile.png')} alt='github'/></a>
-      <a href='https://www.linkedin.com/in/jake-derhalli/' target="_blank"><img className='li-m-img' src={require('../resources/linkedin-mobile.jpg')} alt='linkedin'/></a>
+      <a href='https://github.com/JuiceboxJones' target="_blank" rel="noopener noreferrer"><img className='gh-m-img' src={require('../resources/github-mobile.png')} alt='github'/></a>
+      <a href='https://www.linkedin.com/in/jake-derhalli/' target="_blank" rel="noopener noreferrer"><img className='li-m-img' src={require('../resources/linkedin-mobile.jpg')} alt='linkedin'/></a>
       <img className='gm-m-img' onClick={this.showContact} src={require('../resources/gmail-mobile.png')} alt='gmail'/>
       {this.state.showContact ? <EmailForm/> : ''}
       </div>
@@ -33,7 +33,7 @@ render(){
       <div className="full-contact">
         <div className="snapshot-container">
           <div className="linkedin-window">
-            <a href="https://www.linkedin.com/in/jake-derhalli/" target="_blank">
+            <a href="https://www.linkedin.com/in/jake-derhalli/" target="_blank" rel="noopener noreferrer">
               <img
                 src={require('../resources/linkedin.PNG')}
                 alt="linkedin-link"
@@ -41,7 +41,7 @@ render(){
             </a>
           </div>
           <div className="github-window">
-            <a href="https://github.com/JuiceboxJones" target="_blank">
+            <a href="https://github.com/JuiceboxJones" target="_blank" rel="noopener noreferrer">
               <img src={require('../resources/github.PNG')} alt="github-link" />{' '}
             </a>
           </div>

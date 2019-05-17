@@ -2,10 +2,11 @@
   color: rgb(212, 212, 212);
   font-family: 'Ubuntu Mono', monospace;
 }
-body{
+html{
   background-image: url('./resources/portfolio background1080.PNG');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
@@ -25,10 +26,3 @@ button{
   }
 }
 
-@media screen and (min-width: 2300px){
-
-  body{
-  background-image: url('./resources/portfolio background.PNG');
-  }
-
-}

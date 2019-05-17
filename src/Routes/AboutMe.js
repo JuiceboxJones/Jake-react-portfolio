@@ -3,8 +3,10 @@ import Typist from 'react-typist';
 import { Link } from 'react-router-dom';
 import '../Components/terminal.css';
 import './aboutMe.css';
+import ModalContext from '../Context'
 
 class AboutMe extends React.Component {
+  static contextType = ModalContext;
   state = {
     renderMsg: false,
     clearLoad: false
@@ -13,7 +15,7 @@ class AboutMe extends React.Component {
   //create loading effect
   //once loaded, display about me
 
-  test = () => {
+  load = () => {
     this.setState({
       clearLoad: true
     });
@@ -31,11 +33,12 @@ class AboutMe extends React.Component {
           <div className="windowBar">
           <span className='window-header'>root@kali:~</span>
           <div className='button-menu'>
-          <button type='button' disabled className='exit'></button>
-          <button type='button' disabled className='minimize'></button>
-          <button type='button' disabled className='expand'></button>
+          <button type='button' disabled aria-label='mock-button' className='exit'></button>
+          <button type='button' disabled aria-label='mock-button' className='minimize'></button>
+          <button type='button' disabled aria-label='mock-button' className='expand'></button>
           </div>
           <p/>
+          <div className='menu-bar-container'>
           <span className='menu-bar'>File</span>
           <span className='menu-bar'>Edit</span>
           <span className='menu-bar'>View</span>
@@ -43,11 +46,12 @@ class AboutMe extends React.Component {
           <span className='menu-bar'>Terminal</span>
           <span className='menu-bar'>Help</span>
           </div>
+          </div>
           <div className="AboutMe-content">
             <div className={this.state.clearLoad ? 'hidden' : 'visible'}>
               <Typist
-                onTypingDone={this.test}
-                avgTypingDelay={120}
+                onTypingDone={this.load}
+                avgTypingDelay={80}
                 startDelay={1000}
                 cursor={{
                   show: false,
@@ -77,10 +81,11 @@ class AboutMe extends React.Component {
               </p>
               <div className="aboutMe-heading">-Skills-</div>
               <br />
-              <Typist
+              {!this.context.aboutMeDone ? <Typist
                 className="skills-message"
-                avgTypingDelay={60}
-                startDelay={6000}
+                onTypingDone={this.context.setAboutMeDone}
+                avgTypingDelay={40}
+                startDelay={4000}
                 cursor={{
                   blink: true,
                   element: '▮'
@@ -88,56 +93,66 @@ class AboutMe extends React.Component {
               >
                 <span className="skill-title">Front-End​</span>: HTML5, CSS3,
                 JavaScript ES6, jQuery, React, React Hooks.
-                <Typist.Delay ms={1250} />
+                <Typist.Delay ms={750} />
                 <br />
                 <br />
                 <span className="skill-title">Back-End</span>​: PostgreSQL,
                 Node, Express, JSON, JWT, Rest APIs, Authentication.
-                <Typist.Delay ms={1250} />
+                <Typist.Delay ms={750} />
                 <br />
                 <br />
                 <span className="skill-title">Tools/Methods​</span>: Git /
                 GitHub, Heroku, Mocha & Chai testing, mobile development,
                 responsive design.
                 <br/>
-                <Typist.Delay ms={1250} />
+                <Typist.Delay ms={750} />
                 <br />
                 <span> <Link to='/' className="nav-link" tabIndex='0'> /Home </Link></span>
                 <br />
-                <Typist.Delay ms={1250} />
+                <Typist.Delay ms={750} />
                 <br />
                 <span> <Link to='/projects' className="nav-link"> /Projects </Link></span>
                 <br />
-                <Typist.Delay ms={1250} />
+                <Typist.Delay ms={750} />
                 <br />
                 <span> <Link to='/contact' className="nav-link"> /Contact Me </Link></span>
                 <br />
                 {''}
-              </Typist>
-            </div>
-            
-            {/* <Typist.Delay ms={1250} />
+              </Typist> : 
+              <div className="skills-message">
+              <span className="skill-title">Front-End​</span>: HTML5, CSS3,
+                JavaScript ES6, jQuery, React, React Hooks.
                 <br />
-                I'm a full-stack web developer and clever solutions provider.
-                <Typist.Delay ms={1250} />
                 <br />
-                Please continue to lear<Typist.Delay ms={500} />m more
-                <Typist.Backspace count={6} delay={1000} />
-                <Typist.Delay ms={750} />
-                n more about me. */}
-            {/* <br/>
-                <Typist.Delay ms={1250} />
+                <span className="skill-title">Back-End</span>​: PostgreSQL,
+                Node, Express, JSON, JWT, Rest APIs, Authentication.
+                <br />
+                <br />
+                <span className="skill-title">Tools/Methods​</span>: Git /
+                GitHub, Heroku, Mocha & Chai testing, mobile development,
+                responsive design.
+                <br/>
                 <br />
                 <span> <Link to='/' className="nav-link" tabIndex='0'> /Home </Link></span>
                 <br />
-                <Typist.Delay ms={1250} />
                 <br />
                 <span> <Link to='/projects' className="nav-link"> /Projects </Link></span>
                 <br />
-                <Typist.Delay ms={1250} />
                 <br />
                 <span> <Link to='/contact' className="nav-link"> /Contact Me </Link></span>
-                <br /> */}
+                <br />
+                {''}
+                <Typist
+                className="skills-message"
+                avgTypingDelay={40}
+                startDelay={4000}
+                cursor={{
+                  blink: true,
+                  element: '▮'
+                }}
+              />
+              </div>}
+            </div>
           </div>
         </div>
       </div>

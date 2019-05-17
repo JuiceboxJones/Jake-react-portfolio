@@ -14,6 +14,23 @@
   margin-right: 10px;
 }
 
-@media screen and (max-width: 900px){}
+.installing{
+  display: flex;
+  margin-left: 10px;
+}
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width: 900px){
+  .menu-bar-container span{
+    font-size: 80%;
+  }
+  .button-menu button{
+    width: 15px;
+    height: 15px;
+  }
+  
+}
 
 @media screen and (min-width: 2300px){}
