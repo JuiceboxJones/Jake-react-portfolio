@@ -26,7 +26,6 @@ static contextType = ModalContext
   }
 
   render() {
-    console.log(this.context.path)
     return (
       <div className="project-page">
       <div className='mobile-projects'>

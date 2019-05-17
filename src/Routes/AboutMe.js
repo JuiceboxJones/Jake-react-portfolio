@@ -22,7 +22,6 @@ class AboutMe extends React.Component {
         renderMsg: true
       });
     }, 5000);
-    console.log(this.state);
   };
 
   render() {

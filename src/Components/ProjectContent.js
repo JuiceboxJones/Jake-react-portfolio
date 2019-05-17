@@ -14,7 +14,6 @@ class ProjectContent extends Component {
   }
 
   render() {
-    console.log(this.context)
     return (
       <>
       <div className={this.props.class}>

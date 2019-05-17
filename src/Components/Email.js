@@ -62,7 +62,6 @@ export default class EmailForm extends Component {
   }
 
   render() {
-    console.log(this.state.emailContent)
     return (
       <div className='email-main-container'>
         <div className='email-form-container'>
