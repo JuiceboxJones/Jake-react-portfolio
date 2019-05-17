@@ -50,7 +50,7 @@ class HomePage extends React.Component {
           <div className="HomePage-content">
               {this.state.renderMsg ? <Typist
                 className="HomePage-message"
-                avgTypingDelay={80}
+                avgTypingDelay={65}
                 startDelay={2000}
                 cursor={{ 
                   blink: true,

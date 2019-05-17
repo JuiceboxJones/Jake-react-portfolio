@@ -106,6 +106,13 @@ animation: 0s;
     justify-content: center;
     align-items: center;
   }
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .gh-m-img{
     width: 30%;
     margin-top: 27.3%;
