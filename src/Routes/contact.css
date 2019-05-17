@@ -117,18 +117,21 @@ animation: 0s;
     width: 30%;
     margin-top: 27.3%;
     transition: 3s ease-in-out;
-    animation: pulse-icon 1.4s infinite
+    animation: pulse-icon 1.4s infinite;
+    cursor: pointer;
   }
   .gm-m-img{
     width: 37%; 
     transition: 1s ease-in-out;
-    animation: pulse-icon 1.3s infinite
+    animation: pulse-icon 1.3s infinite;
+    cursor: pointer;
   }
   .li-m-img{
     width: 30%;
     margin-top: 6%;
     transition: 5s ease-in-out;
-    animation: pulse-icon 1.5s infinite
+    animation: pulse-icon 1.5s infinite;
+    cursor: pointer;
   }
   .contact-nav{
     background: linear-gradient(0deg, rgba(159,159,159,1) 0%, rgba(175,175,175,1) 45%, rgba(184,184,184,1) 100%);
