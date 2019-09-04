@@ -67,7 +67,7 @@ export default class EmailForm extends Component {
             <div className='email-header'>
               <h3>Compose Email</h3>
             </div>
-            <input type='email' className='email-address' name='email-address' onChange={this.handleEmailChange} placeholder='example@example.com' aria-label='email-input' required />
+            <input type='email' className='email-address' name='email-address' onChange={this.handleEmailChange} placeholder='yourEmail@example.com' aria-label='email-input' required />
             <input type='text' className='email-subject' name='email-subject' onChange={this.handleSubjectChange} placeholder='Subject' aria-label='subject-input' required />
             <textarea  className="email-body" name="email-body" onChange={this.handleContentChange} aria-label='body-input' required />
             <div className="btn-group">
